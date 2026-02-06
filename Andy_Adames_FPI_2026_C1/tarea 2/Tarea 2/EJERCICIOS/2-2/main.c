@@ -10,8 +10,6 @@ int main()
     if(precio < 1500){
         precio_nuevo = precio * 1.11;
         printf("\nEl precio es: %7.2f\n", precio_nuevo);
-    } else {
-        printf("\nEl precio es: %7.2f\n", precio);
-    }
+
     return 0;
 }

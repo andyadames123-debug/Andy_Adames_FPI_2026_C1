@@ -6,8 +6,7 @@ int main()
     float promedio;
         printf("Ingrese el promedio del estudiante: ");
         scanf("%f", &promedio);
-
-    if (promedio >= 7.0)
+    if (promedio >= 6.5)
         printf("\nAprobado");
     else
         printf("\nReprobado");

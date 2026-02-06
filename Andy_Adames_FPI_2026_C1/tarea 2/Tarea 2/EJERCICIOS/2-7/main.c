@@ -2,49 +2,34 @@
 
 int main()
 {
-    float vendedor1, vendedor2, vendedor3;
-        printf("\nIngrese las ventas del vendedor 1: ");
-            scanf("%f", &vendedor1);
-        printf("Ingrese las ventas del vendedor 2: ");
-            scanf("%f", &vendedor2);
-        printf("Ingrese las ventas del vendedor 3: ");
-            scanf("%f", &vendedor3);
+    float P, S, R;
 
-    printf("\n\nORDEN DE VENTAS (Mayor a Menor):\n");
+    printf("\nIngrese las ventas de los tres vendedores: ");
+    scanf("%f %f %f", &P, &S, &R);
 
-    if (vendedor1 > vendedor2) {
-        if (vendedor1 > vendedor3) {
-            if (vendedor2 > vendedor3) {
-                printf("Vendedor 1: %8.2f\n", vendedor1);
-                printf("Vendedor 2: %8.2f\n", vendedor2);
-                printf("Vendedor 3: %8.2f\n", vendedor3);
-            } else {
-                printf("Vendedor 1: %8.2f\n", vendedor1);
-                printf("Vendedor 3: %8.2f\n", vendedor3);
-                printf("Vendedor 2: %8.2f\n", vendedor2);
-            }
-        } else {
-            printf("Vendedor 3: %8.2f\n", vendedor3);
-            printf("Vendedor 1: %8.2f\n", vendedor1);
-            printf("Vendedor 2: %8.2f\n", vendedor2);
-        }
-    } else {
-        if (vendedor2 > vendedor3) {
-            if (vendedor1 > vendedor3) {
-                printf("Vendedor 2: %8.2f\n", vendedor2);
-                printf("Vendedor 1: %8.2f\n", vendedor1);
-                printf("Vendedor 3: %8.2f\n", vendedor3);
-            } else {
-                printf("Vendedor 2: %8.2f\n", vendedor2);
-                printf("Vendedor 3: %8.2f\n", vendedor3);
-                printf("Vendedor 1: %8.2f\n", vendedor1);
-            }
-        } else {
-            printf("Vendedor 3: %8.2f\n", vendedor3);
-            printf("Vendedor 2: %8.2f\n", vendedor2);
-            printf("Vendedor 1: %8.2f\n", vendedor1);
-        }
+if (P > S)
+{
+    if (P > R)
+    {
+        if (S > R)
+            printf("\n\n El orden es P, S y R: %8.2f %8.2f %8.2f", P, S, R);
+        else
+            printf("\n\n El orden es P, R y S: %8.2f %8.2f %8.2f", P, R, S);
     }
-
+        else
+        printf("\n\n El orden es R, P y S: %8.2f %8.2f %8.2f", R, P, S);
+}
+        else
+{
+    if (S > R)
+    {
+        if (P > R)
+            printf("\n\n El orden es S, P y R: %8.2f %8.2f %8.2f", S, P, R);
+        else
+            printf("\n\n El orden es S, R y P: %8.2f %8.2f %8.2f", S, R, P);
+    }
+        else
+        printf("\n\n El orden es R, S y P: %8.2f %8.2f %8.2f", R, S, P);
+}
     return 0;
 }

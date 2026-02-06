@@ -6,7 +6,7 @@ int main()
     int opcion, numero;
     float resultado;
     printf("Ingrese la opcion del calculo: 1,2,3 o 4 y el valor entero: ");
-    scanf("%d %d", &opcion, &numero);
+    scanf("%d %d",&opcion, &numero);
 
     switch(opcion)
     {
