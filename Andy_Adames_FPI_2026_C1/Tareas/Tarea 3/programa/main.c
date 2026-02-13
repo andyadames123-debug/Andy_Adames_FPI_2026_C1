@@ -14,7 +14,7 @@ int main()
     else
     {
         ganador1 = rand()%31 +10;
-        ganador2 =rand ()%31+10;
+        ganador2 = rand ()%31+10;
         ganador3 =rand ()%31+10;
 
         printf("\n Numeros ganaores: %d %d %d\n", ganador1, ganador2 , ganador3);
