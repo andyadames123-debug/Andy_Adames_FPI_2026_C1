@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1772745323 source:c:\users\andy\onedrive - instituto tecnológico de las américas (itla)\escritorio\tarea 3\8-3\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
